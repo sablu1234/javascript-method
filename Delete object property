@@ -1,0 +1,11 @@
+let user = {
+    name: "tapas",
+    age:40,
+    "is admin": true,
+    "movie lover": true
+}
+
+console.log(user.name);//"tapas"
+console.log(user.age);// 40
+
+delete user["movie lover"];
