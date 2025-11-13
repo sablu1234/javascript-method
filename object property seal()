@@ -1,0 +1,16 @@
+# but seal , freeze ar  moto but calue add/delete na holeo update kora jai 
+const dept = {
+  name: "finance"
+}
+
+Object.seal(dept);
+// seal use korle new property add kora jai na
+dept.address = "Bangalore";
+console.log(dept)//{ "name":"finance"}
+
+// seal use korle property delete korao jai na
+delete dept.name;
+console.log(dept)//{ "name":"finance"}
+
+dept.name = "economics";
+console.log(dept)//{ "name":"economics"}
