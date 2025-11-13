@@ -1,4 +1,4 @@
-// Inside an object(amara jokhon kono method je object ar modhe call korbo sei method ar "this" ar value sei object ar value hobe)
+// Inside an object-implicit Binding (amara jokhon kono method je object ar modhe call korbo sei method ar "this" ar value sei object ar value hobe)
 
 const employee = {
     id: 65465,
@@ -11,3 +11,6 @@ const employee = {
 
 console.log("Employedd ID: ",employee.id);
 console.log(employee.returnThis())
+
+
+implicit Binding: kono object ar vetore jokhon kon funciton (method) call hoi , to khon "this" auto matic vabe sei object kei nirdes kore take Implicit Binding bole.
