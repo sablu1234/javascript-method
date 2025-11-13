@@ -1,0 +1,8 @@
+// Map(fromEntries ata dara array to obj) => array covert to obj
+const entries = new Map([
+    ["foo", "bar"],
+    ["baz",42],
+])
+
+const objEntries = Object.fromEntries(entries);
+console.log(objEntries)
