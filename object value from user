@@ -1,0 +1,9 @@
+//object key [] ata use kore variable nite hoi but value normaly nite hoi []ata lage na
+
+let car = prompt("Which is your Favourit car");
+ let value = prompt("Which is your Favourit count");
+ let favCars = {
+     [car]: value
+ }
+
+console.log(favCars);
