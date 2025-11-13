@@ -1,0 +1,17 @@
+// factory
+function createUser(name, age){
+    return{
+        name,
+        age,
+        greet(){
+            console.log(this.name)
+        }
+    }
+}
+const user1 = createUser("tapas", 39);
+console.log(user1);
+user1.age;
+user1.name;
+user1.greet();
+const user2 = createUser("bob", 32);
+console.log(user2);
