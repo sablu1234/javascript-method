@@ -1,0 +1,7 @@
+const myObj ={
+  a: "tapas",
+  b: 32
+}
+
+const myArr = Object.entries(myObj)
+console.log(myArr)
