@@ -1,0 +1,22 @@
+// nested object
+let profile ={
+    name: "tapas",
+    company: "CreoWis",
+    message: function(){
+        console.log(`${this.name} work at ${this.company}`);
+    },
+    address: {
+        city: "Bangalore",
+        pin: 56032,
+        state: "Karnataka",
+        country: "India",
+        greeting: function(){
+            console.log("Welcome to India");
+        }
+    },
+}
+// for ...in
+for (let key in profile){
+    console.log(key);
+    console.log(profile[key])
+}
