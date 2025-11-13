@@ -4,4 +4,4 @@ const myObj ={
 }
 
 const myArr = Object.entries(myObj)
-console.log(myArr)
+console.log(myArr)//// Output: [["a", "tapas"], ["b", 32]]
