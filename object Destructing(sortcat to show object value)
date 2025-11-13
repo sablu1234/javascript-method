@@ -1,0 +1,46 @@
+console.log("Learn Object Destructing...")
+const student = {
+  'name': "John Williamson",
+  'age': 9,
+  'std': 3,
+  'subject': ['math', 'English', 'EVS'],
+  'parents': {
+    'father': "Brown Williamson",
+    'mother': "Sophia",
+    'email': "john-parents@gmail.com"
+  },
+  address: {
+    'street': "65/2,brooklyn road",
+    'city': 'Carterton',
+    'country': 'New Zealand',
+    'zip': 5791
+  }
+}
+
+## Normal way to show output 
+
+const name = student.name;
+const city = student.address.city;
+console.log(name, city)//John Williamson Carterton
+
+//Destructing
+const {name,age,meal="bread"} = student;
+const city = student.address.city;
+console.log(name, age, meal)//John Williamson 9 bread
+
+//another way 
+const {subjects, numberOfSubjects = subjects.length} = student;
+console.log(numberOfSubjects)//3
+
+// Variable alias (destructuring এ) mane amra variable name chanve kore use korte pari 
+const {std: standard} = student;
+console.log(standard)//3
+
+// amra jodi nested label destructuring korte chai 
+
+// ami jodi kono sutdent ar parent ke mail dite chai 
+
+function sendEmail({parents: {email}}){
+  console.log(`Sent an email to ${email}`)
+}
+sendEmail(student);
