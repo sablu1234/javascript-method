@@ -1,0 +1,10 @@
+## Object Reference
+
+let fruit = { name: "mango"}// XA01
+const oneMoreFruit = { name: "mango"}// YB02
+console.log(fruit == oneMoreFruit);
+console.log( fruit=== oneMoreFruit);
+
+fruit = oneMoreFruit;
+console.log(fruit == oneMoreFruit);
+console.log( fruit=== oneMoreFruit);
