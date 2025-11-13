@@ -1,0 +1,5 @@
+const team ={
+  name: "hasan"
+}
+
+console.log(Object.hasOwn(team, "name"));
