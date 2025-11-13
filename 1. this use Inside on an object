@@ -1,0 +1,13 @@
+// Inside an object
+
+const employee = {
+    id: 65465,
+    firstName: "Alex",
+    lastName: "B",
+    returnThis: function(){
+        return this;
+    }
+}
+
+console.log("Employedd ID: ",employee.id);
+console.log(employee.returnThis())
