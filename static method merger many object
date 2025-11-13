@@ -1,0 +1,7 @@
+## akhane one object merge kora jabe Object.assign(target, source1, source2, source3);
+// Static method
+const target = {p:1, a:2};
+const source = {a:3, b:5}
+
+const returnedObj = Object.assign(target,source)
+console.log(returnedObj)
