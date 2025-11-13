@@ -1,0 +1,40 @@
+## normal clone method
+const obj = {name: "tapascript"}
+const obj2 = Object.assign({},obj)
+console.log(obj2)
+
+console.log(obj===obj2)//false
+
+## but ai method a clone korle problem ase target method ar kono value change hole nested object ar khetre value change hoye jabe all object ar but ata non-nested object  hole sudhu target object ar value change hobe
+const obj3 = {
+  a: 1,
+  b:{c: 2}
+}
+const obj4 = Object.assign({}, obj3)
+console.log(obj4)//{"a": 1,"b":{"c":2}}
+// non-nested object a object reference alada create hoi
+obj4.a = 100;
+console.log(obj4.a)//100
+console.log(obj3.a)//1 
+//Nested object ar khetre je new reference create hoi ta source, and target same use kore
+obj4.b.c = 3;
+console.log(obj4.b.c)//3
+console.log(obj3.b.c)//3
+
+## so deep cloning ar jonno use korte hobe structuredClone();
+
+const obj3 = {
+  a: 1,
+  b:{c: 2}
+}
+const obj5 = structuredClone(obj3);
+obj5.a = 300;
+obj5.b.c = 30;
+
+console.log(obj5.a)//300
+console.log(obj3.a)//1
+
+console.log(obj5.b.c)//30
+console.log(obj3.b.c)//2
+
+
