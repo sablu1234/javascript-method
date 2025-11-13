@@ -1,4 +1,4 @@
-// freeze()
+// freeze() 
 //Immutability (অপরিবর্তনীয়তা)
 
 const emp ={
@@ -7,8 +7,27 @@ const emp ={
 
 Object.freeze(emp);
 emp.sal =200;
+// freeze a baire theke obj property add /delete kisui kora jai na
+emp.name = "Alex";
+delete emp.sal;
 
-console.log(emp)
+console.log(emp)//{"sal":100}
 
-## ata dara check korte pari object ki frozen kina isFrozen();
-console.log(Object.isFrozen(emp));
+console.log(Object.isFrozen(emp));//true
+
+# but seal , freeze ar  moto but calue add/delete na holeo update kora jai 
+const dept = {
+  name: "finance"
+}
+
+Object.seal(dept);
+// seal use korle new property add kora jai na
+dept.address = "Bangalore";
+console.log(dept)//{ "name":"finance"}
+
+// seal use korle property delete korao jai na
+delete dept.name;
+console.log(dept)//{ "name":"finance"}
+
+dept.name = "economics";
+console.log(dept)//{ "name":"economics"}
