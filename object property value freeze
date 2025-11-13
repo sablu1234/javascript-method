@@ -1,0 +1,14 @@
+// freeze()
+//Immutability (অপরিবর্তনীয়তা)
+
+const emp ={
+  sal: 100
+}
+
+Object.freeze(emp);
+emp.sal =200;
+
+console.log(emp)
+
+## ata dara check korte pari object ki frozen kina isFrozen();
+console.log(Object.isFrozen(emp));
