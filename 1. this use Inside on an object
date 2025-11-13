@@ -2,15 +2,18 @@
 
 const employee = {
     id: 65465,
-    firstName: "Alex",
+    fristName: "Alex",
     lastName: "B",
     returnThis: function(){
         return this;
+    },
+    getFullName: function(){
+        console.log(`${this.fristName} ${this.lastName}`);
     }
 }
 
 console.log("Employedd ID: ",employee.id);
-console.log(employee.returnThis())
+console.log("this inside the employee object", employee.returnThis())
+console.log(employee.getFullName())
 
-
-implicit Binding: kono object ar vetore jokhon kon funciton (method) call hoi , to khon "this" auto matic vabe sei object kei nirdes kore take Implicit Binding bole.
+Implicit Binding: kono object ar vetore jokhon kon funciton (method) call hoi , to khon "this" auto matic vabe sei object kei nirdes kore take Implicit Binding bole.
