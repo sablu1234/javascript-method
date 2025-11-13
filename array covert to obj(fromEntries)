@@ -1,8 +1,26 @@
-// Map(fromEntries ata dara array to obj) => array covert to obj
+## Map(fromEntries ata dara array to obj) => array covert to obj(akhane map use korte  hobe convert array to obj map sarao kora jabe but map ar kisu benifir ase)
 const entries = new Map([
-    ["foo", "bar"],
-    ["baz",42],
+  ["foo", "bar"],
+  ["baz", 42],
 ])
 
-const objEntries = Object.fromEntries(entries);
+const objEntries = Object.fromEntries(entries)
 console.log(objEntries)
+
+
+## map use sara 
+const arr = [["foo","bar"],["baz",42]];
+const obj = Object.fromEntries(arr);
+console.log(obj); // { foo: "bar", baz: 42 }
+👉 Map ব্যবহার কেবল convenience ও iterable সুবিধার জন্য, বাধ্যতামূলক নয়।
+const map = new Map([
+  ["foo", "bar"],
+  ["baz", 42]
+]);
+
+for (const [key, value] of map) {
+  console.log(key, value);
+}
+// Output:
+// foo bar
+// baz 42
