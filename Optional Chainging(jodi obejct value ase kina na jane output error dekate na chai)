@@ -1,0 +1,14 @@
+// Optional Chainging()
+const employee = {
+    salary:{
+        bonus: 300
+    }
+}
+
+console.log(employee.department);//undefined
+console.log(employee.department.name);//Error
+// uporet line a error asse amara jodi ai error output dekate na chai tobe
+
+const name = employee.department?.name;
+console.log(name)//undefinde(akhane ata ar error dibe na)
+
