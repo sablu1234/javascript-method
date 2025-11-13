@@ -1,0 +1,4 @@
+const person = new Object();
+person.name = "Alpha";
+person.age = 76;
+console.log(person);
