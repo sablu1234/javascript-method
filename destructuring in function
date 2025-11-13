@@ -1,0 +1,32 @@
+console.log("Learn Object Destructing...")
+
+const getStudent = () => {
+  return {
+  'name': "John Williamson",
+  'age': 9,
+  'std': 3,
+  'subjects': ['math', 'English', 'EVS'],
+  'parents': {
+    'father': "Brown Williamson",
+    'mother': "Sophia",
+    'email': "john-parents@gmail.com"
+  },
+  address: {
+    'street': "65/2,brooklyn road",
+    'city': 'Carterton',
+    'country': 'New Zealand',
+    'zip': 5791
+  }
+}
+}
+
+//ai vabe normally na kore 
+const anotherStudent = getStudent();
+const anotherName = anotherStudent.name;
+const anotherSubjects = anotherStudent.subjects;
+console.log(anotherName, anotherSubjects)
+
+//ai vabe destructing method use kore array function use korte pari(uporer 4 line replace 2 line)
+const {name:anotherName, subjects: anotherSubjects } = getStudent();
+console.log(anotherName, anotherSubjects)
+
