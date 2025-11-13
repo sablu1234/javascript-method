@@ -1,0 +1,13 @@
+//  Constructor Fucntion a new use korte hoi this use kote hoi
+function Car(name,model){
+    this.name = name;
+    this.model = model;
+}
+
+const bmwCar = new Car("BMW", "X1");
+const audiCar = new Car("Audi", "A8");
+
+console.log(bmwCar);
+console.log(audiCar);
+
+console.log(bmwCar instanceof Car);
