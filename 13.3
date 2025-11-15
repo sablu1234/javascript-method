@@ -1,0 +1,23 @@
+// jodi "use strict" mode use kora hoi tobe standalone(kon objct or class or fucniton ar vetore na,je function aka akai declar and exicute hoi ,) function undefinde dekhabe
+"use strict";
+
+function sayHello(){
+    console.log("this inside a fucniton", this)
+}
+
+sayHello();
+
+function outer(a){
+    console.log("this inside an outer function", this);
+
+    return function inner(b){
+        console.log("this inside an inner fucntion", this);
+    }
+}
+
+const outerResult = outer(5);
+outerResult(3);
+
+output:
+this inside an outer function undefined
+index.js:69 this inside an inner fucntion undefined
