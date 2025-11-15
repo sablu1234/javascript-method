@@ -1,0 +1,17 @@
+// inside funciton 
+function sayHello(){
+    console.log("this inside a fucniton", this)
+}
+
+sayHello();
+
+function outer(a){
+    console.log("this inside an outer function");
+
+    return function inner(b){
+        console.log("this inside an inner fucntion");
+    }
+}
+
+const outerResult = outer(5);
+outerResult(3);
