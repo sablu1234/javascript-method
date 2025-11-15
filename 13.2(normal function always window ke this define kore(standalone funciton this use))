@@ -1,3 +1,4 @@
+//"use stict" use korle undefinde hoi(kono function baire theke access korte hole return korte hoi)
 // inside funciton 
 function sayHello(){
     console.log("this inside a fucniton", this)
