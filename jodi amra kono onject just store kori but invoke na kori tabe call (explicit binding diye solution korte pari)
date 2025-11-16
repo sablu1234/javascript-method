@@ -1,0 +1,20 @@
+//
+
+const users = {
+    name: 'Tapas',
+    greet: function(){
+        const inner = ()=> {
+            console.log(`Hello, ${this.name}!`);
+        }
+        inner();
+    },
+}
+users.greet(); 
+const obj ={
+    name: 'john',
+    greet: function(){
+        console.log(`Hello, ${this.name}`);
+    }
+}
+const greetFn = obj.greet;//(amara obj call korsi but invoke korsi na akhane value undefined ar solution holo call(explicit binding))
+greetFn.call(obj)
