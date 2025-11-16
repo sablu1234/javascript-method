@@ -1,0 +1,4 @@
+// this inside the arrow function(global scope a arrow fucniton ar this window ke define kore)
+const getFood = () => this;
+
+console.log("this inside the arrow fucntion define in global schope", getFood());
