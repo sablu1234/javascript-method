@@ -1,0 +1,15 @@
+// Explicit Binding - call , apply, bind
+
+
+//  the call method
+
+function greeting(){
+    console.log(`Hello, ${this.name} belongs to ${this.address}`);
+}
+
+const user = {
+    name: 'Tapascript',
+    address: 'All of you'
+}
+
+greeting.call(user);
