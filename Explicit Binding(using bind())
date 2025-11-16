@@ -1,0 +1,14 @@
+// Explicit Binding - call , apply, bind (amara apply use korle oi khanei output dei but bind use korle amra ata pore use korte pari)
+
+// bind()
+
+const newHobbies = function(hobby1, hobby2){
+    console.log(this.name + 'likes '+ hobby1 + ' , '+ hobby2);
+}
+
+const officer ={
+    name: 'Bob',
+}
+
+const newFn = newHobbies.bind(officer, "Danching", "Singinhg");
+newFn();
