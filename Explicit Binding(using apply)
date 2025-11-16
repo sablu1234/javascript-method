@@ -1,0 +1,11 @@
+// Explicit Binding - call , apply, bind(call funciton binding a jodi akadhik para meter thake tahole apply use kora better - ai somossar solution hisebe apply ase)
+
+const likes = function(hobby1, hobby2){
+    console.log(this.name + 'likes '+ hobby1 + ' , '+ hobby2);
+}
+
+const person = {
+    name: "Tapas",
+}
+const hobbiesToApply = ["sleeping", "Eating"];
+likes.apply(person, hobbiesToApply);
