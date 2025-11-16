@@ -1,4 +1,5 @@
 // Explicit Binding - call , apply, bind
+//call funciton a kono parameter sata use
 
 
 //  the call method
@@ -12,4 +13,19 @@ const user = {
     address: 'All of you'
 }
 
-greeting.call(user);
+greeting.call(user);//Hello, Tapascript belongs to All of you
+
+
+
+////////////////////////////
+jodi call function a kono parameter thake 
+
+const likes = function(hobby1, hobby2){
+    console.log(this.name + 'likes '+ hobby1 + ' , '+ hobby2);
+}
+
+const person = {
+    name: "Tapas",
+}
+
+likes.call(person,"Teaching", "Blogging");//Tapaslikes Teaching , Blogging
