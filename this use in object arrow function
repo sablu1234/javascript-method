@@ -1,0 +1,15 @@
+// this use in object arrow function 
+const food = {
+    name: "mango",
+    color: "yellow",
+
+    getDesc: function(){
+        return () =>`${this.name} is ${this.color}`;
+    }
+    // getDesc: function(){
+    //     return `${this.name} is ${this.color}`;
+    // }
+
+}
+const foo = food.getDesc();
+console.log(foo());
