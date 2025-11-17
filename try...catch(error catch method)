@@ -1,0 +1,11 @@
+try{
+    console.log("execution start here");
+    abc;
+    console.log("execution ends here");
+}catch(err){
+    console.error("An Error has occured ", err);
+
+    console.log(err.name);
+    console.log(err.message);
+    console.log(err.stack);
+}
