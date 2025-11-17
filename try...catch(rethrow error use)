@@ -1,0 +1,15 @@
+//amara jodi eror ke abar use korte chai aro customize kore tobe rethrow use korbo 
+function validateForm(formData){
+    try{
+        if(!formData.username) throw new Error("User name is Mandatory");
+        if(!formData.email.includes("@")) throw new Error("Invalid Email format!");
+    }catch(error){
+        console.error("validation Issue Found: ", error.message);
+        throw error;//rethrow
+    }
+}  
+
+try{
+    validateForm({username: "Tapas", email: "bademail"})
+}catch(error){
+console.error("Showing user error message for user creation", error.message);
