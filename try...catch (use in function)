@@ -1,0 +1,16 @@
+const person ={
+    name: "Tapas",
+    address: {
+        city: "Bangalore"
+    }
+}
+
+function getPostalCode(user){
+    try{
+        console.log(user.address.country.postalCode);
+    }catch(error){
+        console.error("Error accessing property: ", error.message);
+    }
+}
+
+getPostalCode(person);
