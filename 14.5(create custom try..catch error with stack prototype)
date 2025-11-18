@@ -1,0 +1,23 @@
+// Custom error
+
+function ValidationError(message){
+    this.name = "ValidationError";
+    this.message = message;
+    this.stack = new Error().stack;
+}
+//jodi stack ar value nite chai tobe niser ai line dite hobe
+ValidationError.prototype = Object.create(Error.prototype);
+
+function validationCitizen(age){
+    if(age<60){
+        throw new ValidationError("You are not a senior citizen");
+    }
+    return "Your are a senior citizen";
+}
+
+try{
+    const message = validationCitizen(45);
+    console.log(message);
+}catch(error){
+    console.error(`${error.name}: ${error.message}`);
+}
