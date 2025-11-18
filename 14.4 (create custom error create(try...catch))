@@ -1,0 +1,19 @@
+// Custom error
+
+function ValidationError(message){
+    this.name = "ValidationError";
+    this.message = message;
+}
+
+function validationCitizen(age){
+    if(age<60){
+        throw new ValidationError("You are not a senior citizen");
+    }
+    return "Your are a senior citizen";
+}
+
+try{
+    const message = validationCitizen(45);
+}catch(error){
+    console.error(`${error.name}: ${error.message}`);
+}
