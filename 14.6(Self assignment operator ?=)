@@ -1,0 +1,10 @@
+// Self assignment operator ?=
+
+let x;
+let y = 10;
+
+x ?= 20; //x is undefinde, so x becomes 20
+y ?= 30; // y is already 10,so y remains 10
+
+console.log(x); //output: 20;
+console.log(y); // output: 10; 
