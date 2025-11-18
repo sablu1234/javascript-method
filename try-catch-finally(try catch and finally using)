@@ -1,0 +1,16 @@
+// try-catch-finally
+
+
+function processInformaiton(information){
+    try{
+        console.log("Processing informaion...");
+        if(!information) throw new Error("No information available to process");
+        console.log("Information Processed");
+    }catch(error){
+        console.log("Error", error.message);
+    }finally{
+        console.log("Cleanup: Closing database connection");
+    }
+}
+
+processInformaiton()
