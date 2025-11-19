@@ -1,0 +1,60 @@
+console.log("Day 15 : Javascsript array master courese");
+
+-[] Intruciton
+-[] what is an array in javascript
+-[] how to create an array in javascript
+-[] how to get Element from an array in js
+-[] how to add Element to an array in js
+-[] how to remove Element from an array in js?
+-[] how to copy and clone an array in js?
+-[] how to determine if a value is an array in js
+-[] array distructing in javascript
+-[] how to assign a default value to a variable
+-[] how to skip a value in array
+-[] Nested array distructing in javascript
+-[] how to use the rest parameters in js
+-[] how to use spread parameters in js 
+-[] destructuring use cases in js
+-[] how to swap value with destructuring
+-[] how to merges array
+-[] the length property 
+-[] javascript array method
+-[] how to create, remove.update.and access arrays in javascript
+  -[] the concat() array method
+  -[] the join() array method
+  -[] the fill() array method
+  -[] the inclues() array method
+  -[] the indexof() array method
+  -[] the reverse() array method
+  -[] the sort() array method
+  -[] the splice() array method
+  -[] the at() array method
+  -[] the copyWithin() method
+  -[] the flat() method
+  -[] the gruping() Element in array
+  -[] static array method in js
+  -[] the array-WakeLockSentinel
+  -[] the array.from() array method
+  -[] the Array.fromAsync() array method
+  -[] the Array.of() array method
+  -[] array iterator methods in js
+  -[] the filter() array method
+  -[] the Map() array method
+  -[] the flatMap() array method
+  -[] the reduce() array method
+  -[] the reduceRight() array method
+  -[] the some() array method
+  -[] the find() array method
+  -[] the findIndex() array method
+  -[] the findLast() array method
+  -[] the findLastIndex() array method
+  -[] the forEach() array method
+  -[] the every() array method
+  -[] the entries() array method
+  -[] the values() array method
+-[] immutability
+  -[] the toReversed() method
+  -[] the toSorted() method
+  -[] the toSpliced() method
+  -[] the with() method
+-[] tasks and Quizzes with Interview Questions
