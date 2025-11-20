@@ -1,0 +1,9 @@
+// Array Destructuring
+/*
+const tomato = salad[0];
+const mushroom = salad[1];
+const carrot = salad[5];
+*/
+
+[tomato, mushroom, carrot] = ['🍔','😎','🫥'];
+console.log(tomato, mushroom, carrot);
