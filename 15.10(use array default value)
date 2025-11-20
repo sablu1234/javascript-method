@@ -1,0 +1,3 @@
+const [tomato, mushroom = '🍄'] = ['🍅'];
+console.log(tomato);//🍅
+console.log(mushroom);//🍄
