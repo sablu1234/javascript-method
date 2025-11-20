@@ -1,0 +1,6 @@
+let fruits = ['🍊','😋','🍌','🍉', ['🍅', '🍄', '🥕']];
+const veg = fruits[4];//['🍅', '🍄', '🥕']
+console.log(veg);
+const carrot = veg[2];//'🥕'
+fruits[4][2];//'🥕'
+
