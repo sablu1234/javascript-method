@@ -1,0 +1,4 @@
+//Array te jodi akadhik value thake ami tar modhe just suppose duita array destructuring korte chai (variable a value assign korbo
+const [tomato, , carrot] = ['🍅','🍄','🥕'];
+console.log(tomato);//🍅
+console.log(carrot);//🥕
