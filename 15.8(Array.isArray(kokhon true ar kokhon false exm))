@@ -1,0 +1,4 @@
+Array.isArray(['🍔', '😎', '❤️', '😃', '😉', '🫥', '🫠']);//true
+Array.isArray(['🍔'])//return false
+Array.isArray({'tomato': '🍔'});//return false
+Array.isArray([]);//return true
