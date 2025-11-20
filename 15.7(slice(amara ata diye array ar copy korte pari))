@@ -1,0 +1,6 @@
+// slice() - copy(amara ata diye array ar copy korte pari but ai duita same value na)
+const salad = ['🍔', '😎', '❤️', '😃', '😉', '🫥', '🫠'];
+const saladCopy = salad.slice()
+console.log("Salad before copy",salad);//['🍔', '😎', '❤️', '😃', '😉', '🫥', '🫠'];
+console.log("Salad after copy",saladCopy);//['🍔', '😎', '❤️', '😃', '😉', '🫥', '🫠'];
+console.log(salad === saladCopy)//false
