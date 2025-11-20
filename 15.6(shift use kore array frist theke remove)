@@ -1,0 +1,5 @@
+// shift - start
+const salad = ['😒', '🍔', '😎', '❤️', '😃', '😉', '🫥', '🫠']
+const shiftRet = salad.shift();
+console.log(shiftRet);//😒
+console.log(salad);// ['🍔', '😎', '❤️', '😃', '😉', '🫥', '🫠']
