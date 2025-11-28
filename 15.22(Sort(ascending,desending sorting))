@@ -1,0 +1,39 @@
+// Sort()
+// The default sort() method coverts the elemet types into Strings
+// The default sort() is ascending.
+
+const names = ['tom','alex','bob'];
+console.log("After default sorting: ",names.sort());//['alex', 'bob', 'tom']
+
+const artists = [
+    'John White Abbott',
+    'Leonardo da Vinci',
+    'Charles Aubry',
+    'Anna Atkins',
+    'Barent Avercamp'
+]
+
+console.log("Default sorting of the artists array", artists.sort());// ['Anna Atkins', 'Barent Avercamp', 'Charles Aubry', 'John White Abbott', 'Leonardo da Vinci']
+
+
+//But ami jodi chai amar cutom sorting ami banabo
+const artists = [
+    'John White Abbott',
+    'Leonardo da Vinci',
+    'Charles Aubry',
+    'Anna Atkins',
+    'Barent Avercamp'
+]
+
+console.log("Default sorting of the artists array", artists.sort());
+
+artists.sort(function(a, b){
+    return a === b ? 0 : a > b ? -1 : 1
+});
+
+console.log('Sort the artist names (Descending)', artists)
+
+let ages = [2, 1000, 10, 3, 23, 12, 30, 21];
+console.log("Age with default sorting", ages.sort(function(a, b){
+    return a === b ? 0 : a > b ? 1 : -1
+}));
