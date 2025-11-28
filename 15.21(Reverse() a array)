@@ -1,0 +1,4 @@
+//Reverse()reverse array mute the main array
+
+const names = ['tom','alex','bob'];
+console.log(names.reverse('bob'));  
