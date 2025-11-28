@@ -1,0 +1,9 @@
+// Swapping
+
+let frist = "🙁";
+let second = "😃";
+
+[frist, second] = [second, frist];
+
+console.log(frist);//😃
+console.log(second);//🙁
