@@ -1,0 +1,5 @@
+// length
+const arr1 = [11,21,73];
+const arr2 = new Array(7);
+console.log(arr1.length);//3
+console.log(arr2.length);//7
