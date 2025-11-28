@@ -1,0 +1,10 @@
+// fill(amara jodi array ar argument akta nirdisto argument a change hobe tahole fill() use korte pari)
+const colors = ['red', 'green', 'blue'];
+colors.fill("pink");//['pink', 'pink', 'pink']
+console.log(colors);
+
+
+//amra jodi chai nirdisto elment change hobe tahole avabe korte pari(fill(ar modhe frist a start(index) dite hove and 3rd(elemnt(or array length)) number dite hobe))
+const colors = ['red', 'green', 'blue'];
+colors.fill("pink",1 ,3);
+console.log(colors); 
