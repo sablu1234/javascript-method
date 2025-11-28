@@ -1,0 +1,11 @@
+// concat()
+const first = [1,2,3];
+const second = [4,5,6];
+const third = [7,8,9];
+
+const merged = first.concat(second,third);
+console.log(merged);//[1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(first);//[1, 2, 3]
+console.log(second);//[4, 5, 6]
+
+// array.concat(arr1,arr2,..,..,..,arrN);
