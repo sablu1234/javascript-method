@@ -1,0 +1,6 @@
+// Join(join a jekono kisu aksathe add kora jabe ata default"," diye add hoi, chaile other separator use kora jabe)
+const emotions = ['😃','❤️','🤯','🍊'];
+const joined = emotions.join('<=>');
+console.log(joined);//😃<=>❤️<=>🤯<=>🍊
+
+[].join()//""
