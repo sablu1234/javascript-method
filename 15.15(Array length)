@@ -2,4 +2,4 @@
 const arr1 = [11,21,73];
 const arr2 = new Array(7);
 console.log(arr1.length);//3
-console.log(arr2.length);//7
+console.log(arr2.length);//7 (এটা মানে: ৭ লেন্থের একটি ফাঁকা অ্যারে তৈরি করো)
