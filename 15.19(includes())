@@ -1,0 +1,5 @@
+// Includes(amra jodi dekte chai kono element array ta ase kina tahole ata use korbo) ata (casesencitive)
+
+const names = ['tom','alex','bob','john'];
+console.log(names.includes("tom"));
+console.log(names.includes("july"));
