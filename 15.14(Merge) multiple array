@@ -1,0 +1,6 @@
+// Merge by spread
+
+const emotions = ['😃','🙁'];
+const veggies = ['🥦', '🥒', '🌽', '🥒'];
+const emotionsVeggies = [...emotions, ...veggies];
+console.log(emotionsVeggies);
