@@ -1,0 +1,16 @@
+#jodi array te kisu add or akoi sathe remove korte chai 
+const names = ['tom', 'alex', 'bob'];
+console.log(names.splice(0,1, "john"));//['tom']
+console.log(names);//['john', 'alex', 'bob']
+
+
+#amara jodi array theke kisu delete na kore add korte chai
+const names = ['tom', 'alex', 'bob'];
+console.log(names.splice(1, 0, "zack"));
+console.log(names);//['tom', 'zack', 'alex', 'bob']
+
+
+#amara jodi 1st array remove na kore 2 index remove korte chai then 
+const names = ['tom', 'alex', 'bob'];
+console.log(names.splice(2, 1, "zack"));
+console.log(names);//['tom', 'alex', 'zack']
