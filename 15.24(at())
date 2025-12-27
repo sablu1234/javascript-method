@@ -1,0 +1,8 @@
+#amra jodi kono array ar nirdis to value positive or negative index diye ber korte chai
+const junkFoodILove = ['🥖', '🍔', '🍟', '🍕', '🌭', '🥪', '🌮', '🍿'];
+console.log(junkFoodILove.at(0)); //'🥖'
+console.log(junkFoodILove.at(3)); //'🍕'
+console.log(junkFoodILove.at(-1)); //'🍿'
+console.log(junkFoodILove.at(-5)); //'🍕'
+console.log(junkFoodILove.at(-8)); //'🥖'
+console.log(junkFoodILove.at(10)); //'undefined'
