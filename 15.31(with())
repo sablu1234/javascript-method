@@ -1,0 +1,10 @@
+#amara jodi kono source array change na kore new array create korte chai 
+const numbers = [1,2,3,4,5];
+
+const newArray = numbers.with(2, 6);
+console.log(newArray); //Changed (A new copy) [1, 2, 6, 4, 5]
+
+#normally way te amra negative value use korte na parleo "with()" method a amra ata korte parbo
+const numbers = [1,2,3,4,5];
+const anotherArray = numbers.with(-2,8);
+console.log(anotherArray);//[1, 2, 3, 8, 5]
