@@ -1,0 +1,5 @@
+#amara jodi splice korte chai but source array change na kore tobe ata use korbo "toSplice()"
+const months = [ "Jan", "Mar", "Apr", "May"];
+const months2 = months.toSpliced(1, 0, "Feb");
+console.log(months2);//['Jan', 'Feb', 'Mar', 'Apr', 'May']
+console.log(months);//['Jan', 'Mar', 'Apr', 'May']
