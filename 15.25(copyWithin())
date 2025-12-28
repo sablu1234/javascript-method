@@ -1,0 +1,6 @@
+#amra jodi array ar kono value copy kore oi array ar onno position a nite chai tobe "copyWithin()" ata use korbo
+const array = [1,2,3,4,5,6,7];
+array.copyWithin(0,3,6);
+console.log(array);//[4, 5, 6, 4, 5, 6, 7]
+
+#amra 2 ta element use koreo korte pari
