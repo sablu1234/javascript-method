@@ -1,0 +1,38 @@
+#amra jodi object ar array ke group akare sajate chai tobe ata use korte pari "groupBy()"
+const employees = [
+    { name: "Bob", dept: "Engineering", salary: "5000" },
+    { name: "Alex", dept: "HR", salary: "3000" },
+    { name: "Ravi", dept: "Engineering", salary: "7000" },
+    { name: "John", dept: "Engineering", salary: "1000" },
+    { name: "Tom", dept: "sales", salary: "6000" },
+]
+
+const groupByDet = Object.groupBy( employees, ({dept}) => dept );
+console.log(groupByDet);//{Engineering: Array(3), HR: Array(1), sales: Array(1)}
+
+
+
+#amara chaile condition use korte pari "groupBy()"
+const employees = [
+    { name: "Bob", dept: "Engineering", salary: "5000" },
+    { name: "Alex", dept: "HR", salary: "3000" },
+    { name: "Ravi", dept: "Engineering", salary: "7000" },
+    { name: "John", dept: "Engineering", salary: "1000" },
+    { name: "Tom", dept: "sales", salary: "6000" },
+]
+const groupedByMoreThan5000 = Object.groupBy( employees, ({salary}) => {
+    return salary >= 5000 ? "More than 5k" : "Less than 5k";
+})
+
+console.log(groupedByMoreThan5000);//{More than 5k: Array(3), Less than 5k: Array(2)}
+
+
+
+
+
+
+
+
+
+
+
