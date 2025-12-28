@@ -1,0 +1,15 @@
+#amra jodi nested array ke akta array te convert korte chai ata 1st face ke 1 sarite anbe 
+ const arr1 = [0,1,2,[3,4]];
+  console.log(arr1.flat());//[0, 1, 2, 3, 4]
+
+    
+#amra jodi koita nested array face 1 sarite anbo mentionkore dei tobe
+   const arr2 = [0,1,[2,[3,[4,5]]]]
+    console.log(arr2.flat(2));// [0, 1, 2, 3, Array(2)]
+
+#amara jodi chai joto guloi nested array thakuk na kno one sarite hobe tobe infinity use korbo
+const arr2 = [0,1,[2,[3,[4,5]]]]
+console.log(arr2.flat(Infinity));// [0, 1, 2, 3, 4, 5]
+
+
+#
