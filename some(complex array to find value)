@@ -1,0 +1,9 @@
+#amra jodi complex array or object theke dekte chai kono value array te ase kina tobe some() use korte pari
+let list = [
+    { text: 'milk', cost: 4, need: false },
+    { text: 'eggs', cost: 10, need: true },
+    { text: 'butter', cost: 5, need: false },
+    { text: 'bread', cost: 3, need: true },
+    { text: 'bacon', cost: 12, need: true },
+];
+console.log(list.some(item => item.need));//true
