@@ -1,0 +1,38 @@
+#amra jodi array theke spacific object ber korte chai
+let list = [
+    { text: 'milk', cost: 4, need: false },
+    { text: 'eggs', cost: 10, need: true },
+    { text: 'butter', cost: 5, need: false },
+    { text: 'bread', cost: 3, need: true },
+    { text: 'bacon', cost: 12, need: true },
+];
+
+console.log(list.find((element) => element.text === "bacon"));//{text: 'bacon', cost: 12, need: true}
+console.log(list.find((element) => element.text === "slfjla"));//undefined
+
+
+#amra condition use koreo object find korte pari(akhane frist jeta milbe oitai output hobe)
+let list = [
+    { text: 'milk', cost: 4, need: false },
+    { text: 'eggs', cost: 10, need: true },
+    { text: 'butter', cost: 5, need: false },
+    { text: 'bread', cost: 3, need: true },
+    { text: 'bacon', cost: 12, need: true },
+];
+
+let item = list.find((element) => element.cost < 5);
+console.log(item);
+
+#amra jodi number array theke value find korte chai 
+let numbers = [
+    5,
+    9,
+    23,
+    54,
+    97,
+    1
+]
+
+let even = numbers.find(value => value % 2 === 0);
+console.log(even);
+
