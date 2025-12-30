@@ -3,6 +3,10 @@ const names = ['tom','alex','bob','tom'];
 names.indexOf("alex")//1
 names.indexOf("rob")//-1
 
+#amra jodi 1st tom bad dite chai one way is 
+const names = ['tom', 'alex', 'bob', 'tom'];
+console.log(names.indexOf("tom", 1)) //3
+
 // lastIndexOf() ami jodi last index chai (orthat last theke check korbe ase kina)
 names.indexOf("tom");//0
 names.lastIndexOf("tom");//3
