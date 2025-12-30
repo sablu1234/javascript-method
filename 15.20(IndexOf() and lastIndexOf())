@@ -3,7 +3,7 @@ const names = ['tom','alex','bob','tom'];
 names.indexOf("alex")//1
 names.indexOf("rob")//-1
 
-#amra jodi 1st tom bad dite chai one way is 
+#amra jodi 1st ar tom na niye last ar tom ar index chai two way have(console.log(names.indexOf("tom", 1)) or lastIndexOf())
 const names = ['tom', 'alex', 'bob', 'tom'];
 console.log(names.indexOf("tom", 1)) //3
 
