@@ -1,0 +1,25 @@
+#amra jodi kono object(complex) Array theke kono element ar index pete chai
+let list = [
+    "bacon",
+    "eggs",
+    "butter",
+    "bread",
+    "bacon",
+    { text: 'bacon', cost: 12 },
+];
+
+console.log(list.findIndex(function (item) {
+    return item.text === "bacon";
+}));
+
+#same jinis amra array funciton diye korte pari
+let list = [
+    "bacon",
+    "eggs",
+    "butter",
+    "bread",
+    "bacon",
+    { text: 'bacon', cost: 12 },
+];
+
+console.log(list.findIndex((item) => item.text === "bacon"));
