@@ -1,0 +1,57 @@
+#Array like array ar moto dekta but object
+const arr_like = {0: 'I', 1: 'am', 2: 'array-like', length: 3};
+console.log(arr_like);
+arr_like[2];//array-like
+arr_like.length;// 3
+console.log("is arr_like is an array?",Array.isArray(arr_like));//is arr_like is an array? false
+console.log("is arr_like is an object?", arr_like instanceof Object);//is arr_like is an object? true
+
+#keno amra Array lik use korbo
+#array like ke jodi array te convert korte chai ata "[..]" Spread Operator use korte hobe(akhane funciton A JE ARrgument deya hoi ta array te convert kora jabe)
+function checkArgs(){
+    console.log("Array Like Args", arguments);
+    const argArr = [...arguments];
+    console.log("converted Array Args", argArr);
+ argArr.forEach((elem) => {
+        console.log(elem);
+    })
+}
+checkArgs(1, 45);
+
+
+#same vabe html tag elment jeta "array_like" ata ke array te convert
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/index.js" defer></script>
+</head>
+<body>
+    <h1>Day 15 array</h1>
+
+    <div>
+        <ul>
+            <ol type="1">
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+            </ol>
+        </ul>
+    </div>
+</body>
+</html>
+
+
+#array like to array te convert
+console.log("HTML collection as a array like", document.getElementsByTagName("li"));
+const collectionArr = Array.from(document.getElementsByTagName('li'));
+console.log("Converted Array", collectionArr);
