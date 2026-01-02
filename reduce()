@@ -1,0 +1,7 @@
+#kono array ar total value count 
+const numbers = [45, 4, 9, 16, 25];
+function myfunction(total, value){
+  return total + value;
+}
+const newarray = numbers.reduce(myfunction);
+console.log(newarray)
