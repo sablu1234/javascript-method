@@ -1,4 +1,4 @@
-#amara ata diyeo array like ke array te convert kote pari but ara from ar moto direct array dei na (prist promise dei) ai promise ke handle korte then 
+#amara ata diyeo array like ke array te convert kote pari but ara from ar moto direct array dei na (prist promise dei) ai promise ke handle korte then (sources => https://www.youtube.com/watch?v=t05NguKFKo0&list=PLIJrr73KDmRw2Fwwjt6cPC_tk5vcSICCu&index=15)
 const collectionPromise = Array.fromAsync(document.getElementsByTagName('li'));
 console.log("Converted Array", collectionPromise);
 
