@@ -58,4 +58,4 @@ const youngCustomerIndex = customers.findIndex((customer) => {
    return customer.age < 10;
 });
 
-console.log('Found younger customer Index: ',youngCustomerIndex);
+console.log('Found younger customer Index: ',youngCustomerIndex);//Found younger customer Index:  4
