@@ -1,4 +1,4 @@
-#amara jodi kono array ke filter korte chai (source code => https://www.youtube.com/watch?v=t05NguKFKo0&list=PLIJrr73KDmRw2Fwwjt6cPC_tk5vcSICCu&index=15)
+#filter(), method take text function,amara jodi kono array ke filter korte chai (source code => https://www.youtube.com/watch?v=t05NguKFKo0&list=PLIJrr73KDmRw2Fwwjt6cPC_tk5vcSICCu&index=15)
 #demo code
 const Array = arr.filter((element, index, array) => {
   // Do Something...
