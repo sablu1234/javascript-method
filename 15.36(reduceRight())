@@ -1,0 +1,8 @@
+#amra jodi kono array ar total value right to left average count korte chai 
+let number = [100, 40, 15];
+const subsResult = number.reduceRight((accumulator, current) => {
+    return accumulator - current;
+});
+
+console.log('Sub', subsResult);//Sub -125
+
