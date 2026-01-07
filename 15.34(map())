@@ -1,4 +1,4 @@
-#map(), filter method ar moto new array create kore but ata (take) transformation function, 
+#map(take map transformation function), filter method ar moto new array create kore but ata (take) transformation function, 
 #amader kase jodi kono array thake, amra chai oi array theke new array create hobe and array te new element add hobe ja age silo na(exmple full name nai ami fullname element add korbo)
 #demo code
 const newArray = arr.map((currentValue, inded, array) => {
