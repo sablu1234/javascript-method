@@ -1,0 +1,3 @@
+#amra jodi array create korte chai jekhane bivinno dhoroner elements ase
+const c = Array.of(2, true, 'test', {'name': 'Alex'}, [1,2,3]);
+console.log(c)//[2, true, 'test', {…}, Array(3)]
