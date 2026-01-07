@@ -36,3 +36,67 @@ let numbers = [
 let even = numbers.find(value => value % 2 === 0);
 console.log(even);
 
+
+
+#array te jodi kono element find kore data dekte chai tobe find(). jodi karo sathe na mile tobe null return kore
+
+let customers =[
+  {
+    'id': 001,
+    'f_name': 'Abby',
+    'l_name': 'Thomas',
+    'gender': 'M',
+    'married': true,
+    'age': 32,
+    'expense': 500,
+    'purchased': ['Shampo', 'Toys', 'Book']
+  },
+  {
+    'id': 002,
+    'f_name': 'Jerry',
+    'l_name': 'Tom',
+    'gender': 'M',
+    'married': true,
+    'age': 64,
+    'expense': 100,
+    'purchased': ['Stick', 'Blade']
+  },
+  {
+    'id': 003,
+    'f_name': 'Dianna',
+    'l_name': 'Cherry',
+    'gender': 'F',
+    'married': true,
+    'age': 22,
+    'expense': 1500,
+    'purchased': ['Lipstick', 'Nail Polish', 'Bag', 'book']
+  },
+  {
+    'id': 004,
+    'f_name': 'Dev',
+    'l_name': 'Currian',
+    'gender': 'M',
+    'married': true,
+    'age': 82,
+    'expense': 90,
+    'purchased': ['book']
+  },
+  {
+    'id': 005,
+    'f_name': 'Maria',
+    'l_name': 'Gomes',
+    'gender': 'F',
+    'married': true,
+    'age': 27,
+    'expense': 300,
+    'purchased': ['Toys']
+  },
+];
+
+
+const foundYoungCustomers = customers.find((customer) => {
+   return customer.age > 10;
+});
+
+console.log('Young customer',foundYoungCustomers);/Young customer {id: 1, f_name: 'Abby', l_name: 'Thomas', gender: 'M', married: true, …}
+
