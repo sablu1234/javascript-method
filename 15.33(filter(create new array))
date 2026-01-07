@@ -1,0 +1,67 @@
+#amara jodi kono array ke filter korte chai (source code => https://www.youtube.com/watch?v=t05NguKFKo0&list=PLIJrr73KDmRw2Fwwjt6cPC_tk5vcSICCu&index=15)
+#demo code
+const Array = arr.filter((element, index, array) => {
+  // Do Something...
+});
+
+
+#Now see the usecase #amra critacal array theke filter kore new array create 
+// filter()
+let customers =[
+  {
+    'id': 001,
+    'f_name': 'Abby',
+    'l_name': 'Thomas',
+    'gender': 'M',
+    'married': true,
+    'age': 32,
+    'expense': 500,
+    'purchased': ['Shampo', 'Toys', 'Book']
+  },
+  {
+    'id': 002,
+    'f_name': 'Jerry',
+    'l_name': 'Tom',
+    'gender': 'M',
+    'married': true,
+    'age': 64,
+    'expense': 100,
+    'purchased': ['Stick', 'Blade']
+  },
+  {
+    'id': 003,
+    'f_name': 'Dianna',
+    'l_name': 'Cherry',
+    'gender': 'F',
+    'married': true,
+    'age': 22,
+    'expense': 1500,
+    'purchased': ['Lipstick', 'Nail Polish', 'Bag', 'book']
+  },
+  {
+    'id': 004,
+    'f_name': 'Dev',
+    'l_name': 'Currian',
+    'gender': 'M',
+    'married': true,
+    'age': 82,
+    'expense': 90,
+    'purchased': ['book']
+  },
+  {
+    'id': 005,
+    'f_name': 'Maria',
+    'l_name': 'Gomes',
+    'gender': 'F',
+    'married': false,
+    'age': 7,
+    'expense': 300,
+    'purchased': ['Toys']
+  },
+];
+
+// filter() - Get 'Senior Citizens' by Filtering out other customers 
+const seniorCustomers = customers.filter((customer) => {
+  return customer.age>=60;
+});
+console.log('Senior Customer List', seniorCustomers)
