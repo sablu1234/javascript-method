@@ -1,0 +1,3 @@
+#Array use kore jodi new array create korte chai
+const a = new Array(2,3,4);
+console.log(a)
