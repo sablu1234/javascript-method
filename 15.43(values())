@@ -1,0 +1,8 @@
+#amra jodi array theke just value ittartor ber korte chai 
+const arr = [1,2,3,4,5]
+const arrItr2 = arr.values();
+
+for(const value of arrItr2){
+  console.log(value);
+}
+
