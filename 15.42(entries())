@@ -1,0 +1,12 @@
+#amra entries() diye index frist ta ber korte pari ja ittarator bole amara joto bar console korbo next ittrator dibe but akbare pete amra 'for' loop use korbo
+const arr = [1,2,3,4,5]
+const arrItr = arr.entries();
+console.log("Array Itr ",arrItr.next().value)//[0, 1]
+
+#ittarator ar sathe "for" loop use kore amra 
+const arr = [1,2,3,4,5]
+const arrItr = arr.entries();
+
+for(const[index,element] of arrItr){
+  console.log(index,element)
+}
