@@ -1,0 +1,10 @@
+#amra jodi array theke each element pete chai tobe forEach() use korte pari amara sum korte pari funciton ar baire use korte pari
+const arr = [1,2,3,4,5]
+
+let sum = 0 ;
+arr.forEach((elem) =>{
+  sum = sum + elem;
+  console.log(elem)
+})
+
+console.log("sum of using forEach", sum)
