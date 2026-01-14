@@ -1,3 +1,4 @@
+#jodi array ar last a kisu add korte chai 
 // push() - end 
 // const salad = ['🍔','😎','❤️','😃','😉','🫥','🫠'];
 const ret = salad.push('🤷‍♂️');
