@@ -59,4 +59,14 @@ foods.length=0;
 console.log(foods)
 
 11: Create an array of 10 elements(number 1 to 10). Resize the array to length 6 once you find the number 5 in that array. Hint: Use for-loop.
+const foods = [1,2,3,4,5,6,7,8,9,10];
+for(let i=0; i<foods.length; i++){
+  if(foods[i]==5){
+    foods.length=6;
+    break;
+  }
+}
+console.log(foods)
+
+12: Create an Array of 10 elements. Use the splice() method to empty the array.
 
