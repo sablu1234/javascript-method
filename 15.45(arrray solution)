@@ -1,0 +1,16 @@
+#tapascript ar array playlist 15 ar last a je task dise tar solution
+1: Create an array of 5 elements using the Array Constructor.
+const arr = new Array(1,2,3,4,5);
+console.log(arr)
+
+2: Create an array of 3 empty slots.
+const arr = new Array(3);
+console.log(arr)
+
+3: Create an array of 6 elements using the Array literals and access the fourth element in the array using its length property.
+const arr = [1,2,3,4,5,6];
+console.log(arr)
+const forthElement = arr[arr.length-3]
+console.log(forthElement)
+
+4: Use the for loop on the above array to print elements in the odd index.
