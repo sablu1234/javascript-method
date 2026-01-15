@@ -69,4 +69,32 @@ for(let i=0; i<foods.length; i++){
 console.log(foods)
 
 12: Create an Array of 10 elements. Use the splice() method to empty the array.
+const arr = [1,2,3,4,5,6,7,8,9,10]
+arr.splice(0,arr.length)
+console.log(arr)
+
+13: Create an Array of 10 elements. You can empty the array in multiple ways: using the length property, using the pop() method, using the shift() method, setting the array with [], or the splice() method. Which among these methods are most efficient and why?
+// 1. length প্রপার্টি ব্যবহার করে
+const arr1 = [1,2,3,4,5,6,7,8,9,10];
+arr1.length = 0;
+// 2. pop() মেথড ব্যবহার করে
+const arr2 = [1,2,3,4,5,6,7,8,9,10];
+while(arr2.length) arr2.pop();
+// 3. shift() মেথড ব্যবহার করে
+const arr3 = [1,2,3,4,5,6,7,8,9,10];
+while(arr3.length) arr3.shift();
+// 4. নতুন খালি array দিয়ে সেট করা
+let arr4 = [1,2,3,4,5,6,7,8,9,10];
+arr4 = [];
+// 5. splice() মেথড ব্যবহার করে
+const arr5 = [1,2,3,4,5,6,7,8,9,10];
+arr5.splice(0, arr5.length);
+
+
+14: What happens when you concatenate two empty arrays?
+const arr2 = [];
+const arr3 = [];
+const result = arr2.concat(arr3)
+console.log(result); // []
+
 
