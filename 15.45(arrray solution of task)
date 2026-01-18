@@ -116,3 +116,65 @@ console.log(arrsplice)//["apple","banana","cherry","mango"]
 console.log(arrsplice2)//["banana","cherry"]
 
 17: Create an Array of alphanumeric strings. Sort the elements in both ascending and descending orders. You must be doing this in an immutable way such that the source array never gets modified.
+const originalArray = ["a3", "b1", "c2", "a1", "b3"];
+const ascending = [...originalArray].sort()
+console.log(ascending)//["a1","a3","b1","b3","c2"]
+const descending = [...originalArray].sort().reverse()
+console.log(descending)//["c2","b3","b1","a3","a1"]
+
+18: Can you give examples of sparse and dense arrays?
+const dense = [1, 2, 3, 4, 5];
+console.log(dense)//[1,2,3,4,5]
+const dense2 = [1, undefined, 3]; // index 0, 1, 2 সব আছে
+console.log(dense2); // [1, undefined, 3]
+const sparse = [1, , 3, ];
+console.log(sparse.length);//3
+const sparse2 = new Array(5)
+console.log(sparse2.length);//5
+
+19: Give a practical usages of the .fill() method
+const names = ["","","",""].fill("unknown")
+console.log(names)//["unknown","unknown","unknown","unknown"]
+const names2 = new Array(5).fill("Hasan")
+console.log(names2)//["Hasan","Hasan","Hasan","Hasan","Hasan"]
+const numbers = [1, 2, 3, 4, 5];
+numbers.fill(0, 1,4)
+console.log(numbers)//[1,0,0,0,5]
+
+ T-020: How to convert an array to a string?
+const employees = [ 
+  { id: 1, name: "Alice", departmentId: 1, salary: 5000 },
+  { id: 2, name: "Bob", departmentId: 2, salary: 7000 }, 
+  { id: 3, name: "Charlie", departmentId: 3, salary: 4500 },
+  { id: 4, name: "Diana", departmentId: 1, salary: 5500 }, 
+  { id: 5, name: "Edward", departmentId: 2, salary: 8000 }, 
+  { id: 6, name: "Fiona", departmentId: 4, salary: 6000 }, 
+  { id: 7, name: "George", departmentId: 3, salary: 5200 }, 
+  { id: 8, name: "Helen", departmentId: 4, salary: 7200 }, 
+  { id: 9, name: "Ian", departmentId: 2, salary: 4800 }, 
+  { id: 10, name: "Jane", departmentId: 1, salary: 5100 }, 
+];
+const employeeString = JSON.stringify(employees)
+console.log(employeeString)
+
+const departments = [
+  { id: 1, name: "HR" },
+  { id: 2, name: "Engineering" },
+  { id: 3, name: "Marketing" },
+  { id: 4, name: "Sales" },
+];
+const departmentString = JSON.stringify(departments);
+console.log(departmentString)
+
+
+022: Create a new array that combines employee names and department names in the format: "Alice (HR)".
+const employeeWithDept = employees.map(emp=>{
+  const dept = departments.find(d=>d.id === emp.departmentId);
+  
+  return `${emp.name} (${dept.name})`
+}
+);
+console.log(employeeWithDept)
+
+
+23: Find the highest salary among employees.
