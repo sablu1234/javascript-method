@@ -178,3 +178,10 @@ console.log(employeeWithDept)
 
 
 23: Find the highest salary among employees.
+const employeeHighestSalary = employees.reduce((maxEmp,emp) => {
+  return emp.salary>maxEmp.salary ? emp : maxEmp;
+},employees[0]);
+console.log(employeeHighestSalary)
+
+
+24: Check if there is at least one employee in the "Sales" department.
