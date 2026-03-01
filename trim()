@@ -1,0 +1,3 @@
+#amra jodi chai kono string ar samne ar pisoner extra space remove korte tahole ata use kora jabe
+$name = "   Hasan   ";
+$clean_name = trim($name);
